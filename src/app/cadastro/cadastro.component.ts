@@ -16,10 +16,10 @@ export class CadastroComponent implements OnInit {
 
   cadastrar(form: NgForm){
       if(form.valid){
-        this.router.navigate(['./sucesso'])
+        //this.router.navigate(['./sucesso'])
       }else {
         alert('Formulário inválido')
       }
-      console.log('Formulário enviado');
+      console.log(form.control);
   }
 }
